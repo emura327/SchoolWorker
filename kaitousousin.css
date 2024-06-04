@@ -11,6 +11,21 @@ line-height: normal;
 
 }
 
+.controll{
+    display: flex;
+width: 410px;
+height: 119px;
+padding: 13.5px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+
+border: 1px solid #000;
+
+background: #D9D9D9;
+}
+
 h2{
     color: #000;
 
@@ -20,6 +35,21 @@ font-size: 48px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+}
+
+.controll2{
+    display: flex;
+width: 410px;
+height: 119px;
+padding: 13.5px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border: 1px solid #000;
+
+background: #D9D9D9;
+
 }
 
 h3{
@@ -32,6 +62,13 @@ font-weight: 400;
 line-height: normal;
 
 }
+.controll3{
+    width: 879px;
+height: 291px;
+flex-shrink: 0;
+background: #D9D9D9;
+
+}
 
 h4{
     color: #000;
@@ -42,4 +79,27 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 
+}
+
+.controll4{
+    width: 879px;
+height: 291px;
+flex-shrink: 0;
+background: #D9D9D9;
+
+}
+
+#1{
+    display: flex;
+}
+
+h5{
+
+}
+
+.controll5{
+    width: 1437px;
+height: 184px;
+flex-shrink: 0;
+background: #D9D9D9;
 }

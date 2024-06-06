@@ -19,3 +19,91 @@ h2{
     font-weight: 600;
     line-height: normal;
 }
+h3{
+    width: 213px;
+    height: 47px;
+    flex-shrink: 0;
+    color: #000;
+
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+h4{
+width: 213px;
+height: 47px;
+flex-shrink: 0;
+color: #000;
+
+font-family: Inter;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+h5{
+    width: 369px;
+height: 72px;
+flex-shrink: 0;
+color: #000;
+
+text-align: center;
+font-family: Inter;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+h6{
+    width: 347px;
+height: 126px;
+flex-shrink: 0;
+color: #000;
+
+text-align: center;
+font-family: Inter;
+font-size: 128px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+h7{
+    width: 369px;
+height: 72px;
+flex-shrink: 0;
+color: #000;
+
+text-align: center;
+font-family: Inter;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+h8{
+    width: 296px;
+height: 79px;
+flex-shrink: 0;
+color: #000;
+
+text-align: center;
+font-family: Inter;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+h9{
+    width: 291px;
+height: 133px;
+flex-shrink: 0;
+color: #000;
+
+font-family: Inter;
+font-size: 33px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}

@@ -37,20 +37,18 @@ font-weight: 400;
 line-height: normal;
 width: 100px;
 }
-a{
+
+.text3{
     position: relative;
-    left: 250px;
+    left: 150px;
+    top: 20px;
     display: flex;
 width: 909px;
 height: 303px;
 padding: 11px;
 align-items: flex-start;
 gap: 10px;
-flex-shrink: 0;
-border-radius: 8px;
-border: 1px solid #B3B3B3;
-
-background: #FFF;
+flex-shrink: 0;    
 }
 .button{
     position: relative;
@@ -101,4 +99,9 @@ font-style: normal;
 font-weight: 400;
 line-height: 100%;
 width: 100px;
+}
+.sensei2{
+    position: relative;
+    left: 250px;
+    bottom: 60px;
 }

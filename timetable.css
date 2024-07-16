@@ -11,8 +11,11 @@ body{
 .homename{
     display: flex;
     color: #f80202;
-    font-size: 96px;
+    font-size: 120px;
     font-weight: bold;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #FFF;
+    font-family: Inter;
     margin: 0;
     text-align: center;
     width: 450px;

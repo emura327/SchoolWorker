@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+}
+
+.header{
+    width:100%;
+    height: 150px;
+    background: #67DBFF;
+}
+
+
+.homename1{
+    display: flex;
+    color: #FE5F55;
+    font-size: 85px;
+    font-weight: bold;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #FFF;
+    font-family: Inter;
+    margin: 0;
+    text-align: center;
+    width: 450px;
+    height: 155px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+h2{
+    margin: 0;
+    width: 250px;
+    height: 90px;
+    flex-shrink: 0;
+    font-size: 45px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFF;
+}
+
+.license{
+    border-left: 2px solid #000;
+    position: absolute;
+    left: 450px;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.syukatu{
+    border-left: 2px solid #000;
+    position: absolute;
+    left: 700px;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timetable{
+    border-left: 2px solid #000;
+    position: absolute;
+    left: 950px;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.question{
+    border-left: 2px solid #000;
+    position: absolute;
+    left: 1200px;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.help{
+    border-right: 2px solid #000;
+    border-left: 2px solid #000;
+    position: absolute;
+    left: 1450px;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    display: flex;
+width: 389px;
+height: 56px;
+padding: 13.5px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border: 4px solid #000;
+background: #FFF;
+position: relative;
+top: 41px;
+left: 430px;
+font-size: 40px;
+}
+
+h4{
+    display: flex;
+width: 389px;
+height: 54px;
+padding: 13.5px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border: 4px solid #000;
+background: #FFF;
+position: relative;
+top: -102px;
+left: 857px;
+font-size: 40px;
+}
+
+h5{
+    display: flex;
+width: 248.941px;
+height: 56px;
+padding: 13.5px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border: 4px solid #000;
+background: #FFF;
+position: relative;
+top: -258px;
+left: 1285px;
+font-size: 40px;
+}
+
+textarea{
+    position: relative;
+    top: -300px;
+    left: 100px;
+    width: 1455px;
+height: 600px;
+flex-shrink: 0;
+border: 4px solid #000;
+}

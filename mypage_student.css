@@ -57,10 +57,10 @@ body{
 
 h2{
     margin: 0;
-    width: 300px;
+    width: 260px;
     height: 90px;
     flex-shrink: 0;
-    font-size: 50px;
+    font-size: 45px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #FFF;
 }
@@ -68,7 +68,7 @@ h2{
 .license{
     border-left: 2px solid #000;
     position: absolute;
-    left: 600px;
+    left: 450px;
     top: 30px;
     display: flex;
     justify-content: center;
@@ -78,7 +78,7 @@ h2{
 .syukatu{
     border-left: 2px solid #000;
     position: absolute;
-    left: 900px;
+    left: 710px;
     top: 30px;
     display: flex;
     justify-content: center;
@@ -88,7 +88,7 @@ h2{
 .timetable{
     border-left: 2px solid #000;
     position: absolute;
-    left: 1200px;
+    left: 980px;
     top: 30px;
     display: flex;
     justify-content: center;
@@ -98,7 +98,7 @@ h2{
 .question{
     border-left: 2px solid #000;
     position: absolute;
-    left: 1500px;
+    left: 1250px;
     top: 30px;
     display: flex;
     justify-content: center;
@@ -109,7 +109,7 @@ h2{
     border-right: 2px solid #000;
     border-left: 2px solid #000;
     position: absolute;
-    left: 1800px;
+    left: 1550px;
     top: 30px;
     display: flex;
     justify-content: center;

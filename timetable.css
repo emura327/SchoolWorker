@@ -85,3 +85,32 @@ h2{
     justify-content: center;
     align-items: center;
 }
+td{
+    width: 200.885px;
+    height: 90.333px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+th{
+    width: 200.885px;
+    height: 90.333px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background: #1A69C6;
+}
+table{
+    position: absolute;
+    top: 250px;
+    left: 280px;
+    bottom: 200px;
+}
+.kado{
+    background-color: #000;
+}
+

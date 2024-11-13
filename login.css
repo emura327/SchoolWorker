@@ -30,7 +30,7 @@ body{
     align-items: center;
     background-image: url(image2.png);
     background-repeat: no-repeat;
-    
+    background-size: cover;
 }
 
 

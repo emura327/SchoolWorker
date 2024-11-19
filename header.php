@@ -43,7 +43,7 @@
                     <a class="nav-link active" aria-current="page" href="#">保有資格</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">就活</a>
+                    <a class="nav-link active" aria-current="page" href="job_hunting.php">就活</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="timeTable.html">時間割</a>

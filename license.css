@@ -1,0 +1,25 @@
+ul li {
+    list-style: none;
+    margin-top: 220px;
+}
+label{
+    margin-right: 50px;
+    width: 100px;
+    float: left;
+}
+ul{
+    width: 450px;
+    height: 400px;
+    margin: 0 auto;
+}
+.example{
+    width: 500px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #68779a;
+    background: #cbe8fa;
+    cursor: pointer;
+    position: absolute;
+    left: 730px;
+    border-radius:10px;
+}

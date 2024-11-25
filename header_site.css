@@ -1,0 +1,38 @@
+.navbar .navbar-nav .active > .nav-link {
+    color: rgb(0, 0, 0);
+}
+
+.nav-item{
+    font-size: 70px;
+    margin-right: 85px;
+}
+
+.nav-item:hover{
+    text-decoration-line: underline;
+}
+
+.homename1{
+    position: relative;
+    top: 5px;
+    display: flex;
+    color: #FE5F55;
+    font-size: 100px;
+    font-weight: bold;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #FFF;
+    font-family: Inter;
+    margin: 0;
+    text-align: center;
+    width: 320px;
+    height: 130px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    text-decoration: none;
+
+}
+
+.homename1:hover{
+    color: #FE5F55;
+    text-decoration: underline;
+}

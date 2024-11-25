@@ -1,4 +1,5 @@
 <?php
+//ログインシステム
     session_start();
 
     //データベースに接続
@@ -53,6 +54,7 @@
             $ary = $stmt -> fetch(PDO::FETCH_ASSOC);
             $_SESSION["class"] = $ary["class"];
             $_SESSION["student_number"] = $ary["student_number"];
+            $_SESSION["name"] = $ary["name"];
             header("Location: test.php");
             exit();
         }

@@ -1,6 +1,8 @@
-
+<?php
+echo $_GET['message'];
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,19 +60,16 @@
         <h4>
             質問回答
         </h4>
-        <label for="name"
-        style="
-        position: relative;
-        top: 60px;
-        left: 260px;
-        ">Name:</label>
-        <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="20" style="
-         position: relative;
-         top:  60px;
-         left: 260px;
-        "/>
-        <textarea name="kaitou" rows="50" cols="250"></textarea>
+       <h5>
+        先生の名前
+       </h5>
+        
+        <textarea name="message" rows="50" cols="250"></textarea><br>
         </div>
-        <button type="button">回答送信</button>
+       
+        <form action="send.php" method="post" class="switch">
+        <input type="text" name="message" class="textbox"><br>
+      <input type="submit" value="回答送信">
+    </form>
 </body>
 </html>

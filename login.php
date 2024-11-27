@@ -55,7 +55,7 @@
             $_SESSION["class"] = $ary["class"];
             $_SESSION["student_number"] = $ary["student_number"];
             $_SESSION["name"] = $ary["name"];
-            header("Location: test.php");
+            header("Location: mypage.php");
             exit();
         }
     }

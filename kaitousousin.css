@@ -134,13 +134,13 @@ body{
   }
   
   .box{
-      margin       : auto;
+      margin       : 0;
       width        : 1700px;
       height       : 200px;
       background: #D9D9D9;
       position: relative;
       top: 60px;
-      right:10px;
+      left:97px;
   }
   
   textarea{
@@ -169,6 +169,6 @@ body{
   .switch{
     position: relative;
     top:  127px;
-    left: 1758px;
+    left: 1761px;
   }
   

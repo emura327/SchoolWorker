@@ -64,12 +64,15 @@ echo $_GET['message'];
         先生の名前
        </h5>
         
-        <textarea name="message" rows="50" cols="250"></textarea><br>
+        <textarea name="name" rows="50" cols="250"></textarea><br>
         </div>
        
         <form action="send.php" method="post" class="switch">
         <input type="text" name="message" class="textbox"><br>
-      <input type="submit" value="回答送信">
+      
+        <input type="hidden" name="name" value="<?php echo $name; ?>">
+        <input type="hidden" name="message" value="<?php echo $message; ?>">
+        <input type="submit" value="回答送信">
     </form>
 </body>
 </html>

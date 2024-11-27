@@ -119,23 +119,33 @@ h3{
     color: #000;
     font-size: 50px;
 }
-.g1{
-    height: 49px;
+.student_info{
     position: absolute;
     left: 200px;
-    top: 400px
-    
-}
-.g1 p{
-    font-size: 33px;
+    top: 400px;
 }
 
+.g1{
+    height: 49px;
+    font-size: 50px;
+}
+
+.name,.student_number{
+    position: relative;
+    font-size: 33px;
+    display: inline-block;
+    font-size: 50px;
+}
+.name{
+    margin-left: 48px;
+}
 .g2{
     text-align: center;;
     font-weight: 600;
     position: absolute;
     left: 800px;
-    top: 150px;
+    top: 200px;
+    font-size: 50px;
 
 }
 .g2 p{
@@ -143,17 +153,15 @@ h3{
     border-bottom: 3px solid #000;
     background: #FFFCFC;
     position: absolute;
-    top: 10px;
-    left: 80px;
-    
-
+    top: 100px;
 }
 .g3{
     text-align: center;
     font-weight: 600;
     position: absolute;
     left: 800px;
-    top: 500px;
+    top: 600px;
+    font-size: 50px;
 }
 .g4{
     height: 79px;
@@ -161,6 +169,11 @@ h3{
     font-weight: 600;
     position: absolute;
     left: 1400px;
-    top: 175px ;
-    
+    top: 200px ;
+    font-size: 50px;
+}
+.lesson_Name{
+    text-decoration: underline;
+    position: relative;
+    top: 30px;
 }

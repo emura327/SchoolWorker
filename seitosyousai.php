@@ -74,7 +74,7 @@
       
         ?>
         <table class="simei">
-            <td width="300"><p style="margin: 0;"><?php echo $result[0]['student_number']; ?></p></td><td width="350"><p style="margin: 0;"><?php echo $result[0]['class_number']; ?></p></td><td width="261"><p style="margin: 0;"><?php echo $result[0]['name']; ?></p></td><td width="370"><p style="margin: 0;"><?php echo $result[0]['telnumber']; ?></p></td><td width="420"><p style="margin: 0;"><?php echo $result[0]['mailaddress']; ?></p></td>
+            <td width="300"><p style="margin: 0;"><?php echo $result[0]['student_number']; ?></p></td><td width="250"><p style="margin: 0;"><?php echo $result[0]['class_number']; ?></p></td><td width="361"><p style="margin: 0;"><?php echo $result[0]['name']; ?></p></td><td width="370"><p style="margin: 0;"><?php echo $result[0]['telnumber']; ?></p></td><td width="420"><p style="margin: 0;"><?php echo $result[0]['mailaddress']; ?></p></td>
         </table>
         <table class="syukatuzyoukyou">
             <tr>
@@ -95,7 +95,7 @@
               <td><p style="margin: 0;"><?php echo $result3[0]['getday']; ?></p></td><td><p style="margin: 0;"><?php echo $result3[0]['license_name']; ?></p></td>
             </tr>
             <tr>
-              <td><p style="margin: 0;"><?php echo $result3[0]['getday']; ?></p></td><td><p style="margin: 0;"><?php echo $result3[0]['license_name']; ?></p></td>
+              <td><p style="margin: 0;"><?php echo $result3[1]['getday']; ?></p></td><td><p style="margin: 0;"><?php echo $result3[0]['license_name']; ?></p></td>
             </tr>
             <tr>
                 <td><p style="margin: 0;"><?php echo $result3[0]['getday']; ?></p></td><td><p style="margin: 0;"><?php echo $result3[0]['license_name']; ?></p></td>

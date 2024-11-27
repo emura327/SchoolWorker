@@ -1,7 +1,6 @@
 body{
     margin: 0;
 }
-
 .header{
     width:100%;
     height: 150px;
@@ -65,7 +64,7 @@ h2{
     -webkit-text-stroke-color: #FFF;
 }
 
-.license{
+.tannin{
     border-left: 2px solid #000;
     position: absolute;
     left: 450px;
@@ -75,7 +74,7 @@ h2{
     align-items: center;
 }
 
-.syukatu{
+.jyugyou{
     border-left: 2px solid #000;
     position: absolute;
     left: 710px;
@@ -85,7 +84,7 @@ h2{
     align-items: center;
 }
 
-.timetable{
+.touroku{
     border-left: 2px solid #000;
     position: absolute;
     left: 980px;
@@ -115,3 +114,66 @@ h2{
     justify-content: center;
     align-items: center;
 }
+.g1{
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    position: absolute;
+    left: 300px;
+    top: 400px;
+}
+.g1 p{
+    font-size: 33px;
+}
+h5{
+    color: #000;
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+}
+.g2{ 
+    text-align: center;
+    position: absolute;
+    left: 800px;
+    top: 100px;
+    background: #B5F4AC;
+    width: 800px;
+    height: 300px;
+    
+}
+.g3{
+    width: 600px;
+    text-align: center;
+    position: absolute;
+    left: 800px;
+    top: 450px;
+    background: #B5F4AC;
+    width: 350px;
+    height: 350px;
+}
+.g3 p2{
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    position: absolute;
+    left: 200px;
+    top: 300px;
+}
+.g4 {
+    text-align: center;
+    position: absolute;
+    left: 1235px;
+    top: 450px;
+    background: #B5F4AC;
+    width: 375px;
+    height: 350px;
+}
+.g5{
+    position: absolute;
+    left: 50px;
+    top: 880px;
+    font-size: 40px;
+}
+

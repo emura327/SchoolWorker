@@ -57,38 +57,38 @@ body{
 
 h2{
     margin: 0;
-    width: 260px;
+    width: 300px;
     height: 90px;
     flex-shrink: 0;
-    font-size: 45px;
+    font-size: 50px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #FFF;
 }
 
-.license{
+.tannin{
     border-left: 2px solid #000;
     position: absolute;
-    left: 450px;
+    left: 600px;
     top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.syukatu{
+.jyugyou{
     border-left: 2px solid #000;
     position: absolute;
-    left: 710px;
+    left: 900px;
     top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.timetable{
+.touroku{
     border-left: 2px solid #000;
     position: absolute;
-    left: 980px;
+    left: 1200px;
     top: 30px;
     display: flex;
     justify-content: center;
@@ -98,7 +98,7 @@ h2{
 .question{
     border-left: 2px solid #000;
     position: absolute;
-    left: 1250px;
+    left: 1500px;
     top: 30px;
     display: flex;
     justify-content: center;
@@ -109,7 +109,7 @@ h2{
     border-right: 2px solid #000;
     border-left: 2px solid #000;
     position: absolute;
-    left: 1550px;
+    left: 1800px;
     top: 30px;
     display: flex;
     justify-content: center;

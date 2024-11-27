@@ -8,17 +8,7 @@ body{
     background: #67DBFF;
 }
 
-.triangle{
-    background: #67DBFF;
-    height: calc(tan(60deg) * 300px / 2);
-    width: 450px;
-    clip-path: polygon(0 0, 100% 0, 50% 100%);
-    position: absolute;
-    top: 150px;
-    z-index: 1;
-}
-
-.homename1{
+.homename{
     display: flex;
     color: #FE5F55;
     font-size: 120px;
@@ -35,32 +25,12 @@ body{
     flex-shrink: 0;
 }
 
-.homename2{
-    position: relative;
-    display: flex;
-    color: #FE5F55;
-    font-size: 60px;
-    font-weight: bold;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #FFF;
-    font-family: Inter;
-    margin: 0;
-    line-height: 70px;
-    text-align: center;
-    width: 430px;
-    height: 120px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    z-index: 2;
-}
-
 h2{
     margin: 0;
-    width: 260px;
+    width: 250px;
     height: 90px;
     flex-shrink: 0;
-    font-size: 45px;
+    font-size: 50px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #FFF;
 }
@@ -78,7 +48,7 @@ h2{
 .syukatu{
     border-left: 2px solid #000;
     position: absolute;
-    left: 710px;
+    left: 700px;
     top: 30px;
     display: flex;
     justify-content: center;
@@ -88,7 +58,7 @@ h2{
 .timetable{
     border-left: 2px solid #000;
     position: absolute;
-    left: 980px;
+    left: 950px;
     top: 30px;
     display: flex;
     justify-content: center;
@@ -98,7 +68,7 @@ h2{
 .question{
     border-left: 2px solid #000;
     position: absolute;
-    left: 1250px;
+    left: 1200px;
     top: 30px;
     display: flex;
     justify-content: center;
@@ -109,9 +79,37 @@ h2{
     border-right: 2px solid #000;
     border-left: 2px solid #000;
     position: absolute;
-    left: 1550px;
+    left: 1450px;
     top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+td{
+    width: 200.885px;
+    height: 90.333px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+th{
+    width: 200.885px;
+    height: 90.333px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background: #1A69C6;
+}
+table{
+    position: absolute;
+    top: 250px;
+    left: 280px;
+    bottom: 200px;
+}
+.kado{
+    background-color: #000;
 }

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="notice.css" text="text/css">
-    <title>生徒時間割</title>
+    <link rel="stylesheet" href="license.css" text="text/css">
+    <title>Document</title>
 </head>
 <body>
     <?php include('navbar.php');?>
@@ -19,13 +19,22 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-  
-    <h3>タイトル</h3>
-    <form action = "notice.php" method = "POST">
-    <input class="title" type="text" placeholder="title"/>
-    <h4>お知らせ内容</h4>
-    <textarea type="text" placeholder="notice" ></textarea>
-    <button type="submit">送信</button>
-    </form>
+<form action="/form.php" method="post">
+    <ul>
+        <li class="name">
+            <div>
+                <label for="name">資格名</label>
+                <input type="text" id="name" name="name" size="60">
+            </div>
+        </li>
+        <li class="acquisition">
+            <div>
+                <label for="message">取得日</label>
+                <input type="text" id="message" name="message" size="60" ></textarea>
+            </div>
+        </li>
+    </ul>
+            <input type="submit" value="送信する"class="example">
+</form>
 </body>
 </html>

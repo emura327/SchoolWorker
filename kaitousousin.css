@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    
       
   }
   
@@ -153,6 +154,7 @@ body{
       left: 97px;
   }
   h5{
+    width: 300px;
     position: relative;
     top: 51px;
     left: 271px;
@@ -167,6 +169,7 @@ body{
   }
 
   .switch{
+    width: 300px;
     position: relative;
     top:  127px;
     left: 1761px;

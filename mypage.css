@@ -167,13 +167,22 @@ h3{
     height: 79px;
     vertical-align: 300px;
     font-weight: 600;
-    position: absolute;
-    left: 1400px;
-    top: 200px ;
     font-size: 50px;
 }
 .lesson_Name{
     text-decoration: underline;
     position: relative;
     top: 30px;
+}
+.title{
+    text-decoration: underline;
+    font-size: 50px;
+}
+.notice_title{
+    position: absolute;
+    top: 200px;
+    left: 1400px;
+}
+ul{
+    font-size: 50px;
 }

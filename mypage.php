@@ -33,6 +33,15 @@
     } catch (PDOException $e) {
         exit('データベースエラー3');
     }
+    //$ntitleにNOTICEテーブルの結果を代入
+    try{
+        $stmt = $dbh -> prepare('SELECT * FROM NOTICE WHERE class=? or class = "全体"');
+        $stmt -> bindParam(1, $_SESSION["class"], PDO::PARAM_STR);
+        $stmt -> execute();
+        $ntitle = $stmt -> fetchAll(PDO::FETCH_ASSOC);
+    } catch (PDOException $e) {
+        exit('データベースエラー4');
+    }
 
 ?>
 <!DOCTYPE html>
@@ -69,9 +78,15 @@
        多欠授業名
             <p class="lesson_Name"><?php print $answer['lesson_name']?></p>
     </h3>
-    <h3 class="g4">
-        お知らせ
-    </h3>
+    <div class ="notice_title">
+        <h3 class="g4">お知らせ</h3>
+        <ul>
+            <?php 
+                for ($i = 0; $i < 2; $i++){
+                    echo '<li>' . $ntitle[$i]['title'] . '</li>' ;
+                }
+            ?>
+        </ul>
     </div>
 </body>
 </html>

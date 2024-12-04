@@ -1,4 +1,3 @@
-
 h1 {
     display: grid;
     align-content: center;
@@ -31,7 +30,7 @@ body{
     align-items: center;
     background-image: url(image2.png);
     background-repeat: no-repeat;
-    
+    background-size: cover;
 }
 
 

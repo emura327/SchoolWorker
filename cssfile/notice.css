@@ -8,20 +8,10 @@ body{
     background: #67DBFF;
 }
 
-.triangle{
-    background: #67DBFF;
-    height: calc(tan(60deg) * 300px / 2);
-    width: 450px;
-    clip-path: polygon(0 0, 100% 0, 50% 100%);
-    position: absolute;
-    top: 150px;
-    z-index: 1;
-}
-
-.homename1{
+.homename{
     display: flex;
     color: #FE5F55;
-    font-size: 120px;
+    font-size: 65px;
     font-weight: bold;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #FFF;
@@ -35,32 +25,12 @@ body{
     flex-shrink: 0;
 }
 
-.homename2{
-    position: relative;
-    display: flex;
-    color: #FE5F55;
-    font-size: 60px;
-    font-weight: bold;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #FFF;
-    font-family: Inter;
-    margin: 0;
-    line-height: 70px;
-    text-align: center;
-    width: 430px;
-    height: 120px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    z-index: 2;
-}
-
 h2{
     margin: 0;
-    width: 260px;
+    width: 250px;
     height: 90px;
     flex-shrink: 0;
-    font-size: 45px;
+    font-size: 50px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #FFF;
 }
@@ -78,7 +48,7 @@ h2{
 .syukatu{
     border-left: 2px solid #000;
     position: absolute;
-    left: 710px;
+    left: 700px;
     top: 30px;
     display: flex;
     justify-content: center;
@@ -88,7 +58,7 @@ h2{
 .timetable{
     border-left: 2px solid #000;
     position: absolute;
-    left: 980px;
+    left: 950px;
     top: 30px;
     display: flex;
     justify-content: center;
@@ -98,7 +68,7 @@ h2{
 .question{
     border-left: 2px solid #000;
     position: absolute;
-    left: 1250px;
+    left: 1200px;
     top: 30px;
     display: flex;
     justify-content: center;
@@ -109,58 +79,64 @@ h2{
     border-right: 2px solid #000;
     border-left: 2px solid #000;
     position: absolute;
-    left: 1550px;
+    left: 1450px;
     top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 h3{
+    position: absolute;
+    top: 200px;
+    left: 450px;
     color: #000;
-    font-size: 50px;
+font-family: "Noto Sans JP";
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 32px */
 }
-.g1{
-    height: 49px;
+h4{
     position: absolute;
-    left: 200px;
-    top: 400px
-    
+    top: 400px;
+    left: 450px;
+    font-family: "Noto Sans JP";
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 32px */
 }
-.g1 p{
-    font-size: 33px;
-}
-
-.g2{
-    text-align: center;;
-    font-weight: 600;
+.title{
     position: absolute;
-    left: 800px;
-    top: 150px;
-
+    top: 300px;
+    left: 450px;
+    display: flex;
+width: 994px;
+height: 50px;
+padding: 11px;
+align-items: flex-start;
+gap: 10px;
+flex-shrink: 0;
 }
-.g2 p{
-    font-size: 128px;
-    border-bottom: 3px solid #000;
-    background: #FFFCFC;
+textarea{
     position: absolute;
-    top: 10px;
-    left: 80px;
-    
-
-}
-.g3{
-    text-align: center;
-    font-weight: 600;
-    position: absolute;
-    left: 800px;
     top: 500px;
+    left: 450px;
+    display: flex;
+width: 1000px;
+height: 300px;
+padding: 11px;
+align-items: flex-start;
+gap: 10px;
 }
-.g4{
-    height: 79px;
-    vertical-align: 300px;
-    font-weight: 600;
+button{
     position: absolute;
-    left: 1400px;
-    top: 175px ;
-    
+    top: 900px;
+    left: 1500px;
+    display: inline-flex;
+    padding: 12.5px 16px;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    background: #1A69C6;
 }

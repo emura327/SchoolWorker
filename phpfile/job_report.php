@@ -15,6 +15,10 @@
         $dbh = new PDO($dsn, $username, $password);
         $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+        $sql = 'SELECT company_name FROM JOB_HUNTING WHERE student_number = :SNumber';
+        $stmt=$dbh->prepare($sql);
+        $stmt->bindParam(':SNumber', $SNumber, PDO::PARAM_STR);
+        
         $sql = 'INSERT INTO JOB_HUNTING (student_number, company_name, phase, phase_day, remarks)
                 VALUES (:SNumber, :PCName, :PPhase, :PPday, :PRemarks);';
 

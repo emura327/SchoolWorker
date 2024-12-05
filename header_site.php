@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
+
     <meta http-equiv="content-type" charset="utf-8">
     <link rel="stylesheet" href="header_site.css">
-    <link rel="stylesheet" href="hoge.css">
         <!-- BootstrapのCSS読み込み
         <link href="css/bootstrap.min.css" rel="stylesheet" /> -->
     
@@ -25,9 +22,7 @@
           crossorigin="anonymous"
         ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-    
+
 <nav class="nav navbar-expand-md navbar-light bg-info .justify-content-md-between p-4 ">
     <h1>
         <a class="homename1" aria-current="page" href="#">JOHO</a>
@@ -53,6 +48,4 @@
                 </li>
             </ul> 
     </div>
-   
-</body>
-</html>
+</nav>

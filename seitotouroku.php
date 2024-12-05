@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="seitotouroku.css" text="text/css">
+    <link rel="stylesheet" href="../cssfile/seitotouroku.css" text="text/css">
     <title>生徒登録</title>
 </head>
-
 <body>
-  
+<?php include('header_site.php');?>
+</body>
+<body>
+<form action = "student_registration.php" method = "POST">
   <div class="parent">
     <!--table作成とヘッダーだけ先に-->
     <table id="tbl" border="1" style="border-collapse:collapse;">
@@ -23,17 +25,17 @@
         <th class="pass">パスワード</th>
       </tr>
       <tr>
-        <td class="a"><input type="text"></td>
-        <td class="b"><input type="text"></td>
-        <td class="c"><input type="text"></td>
-        <td class="d"><input type="text"></td>
-        <td class="e"><input type="text"></td>
-        <td class="f"><input type="text"></td>
-        <td class="g"><input type="text"></td>
+        <td class="a" name = "student_number"><input type="text"></td>
+        <td class="b" name = "class_number"><input type="text"></td>
+        <td class="c" name = "name"><input type="text"></td>
+        <td class="d" name = "kana"><input type="text"></td>
+        <td class="e" name = "telnumber"><input type="text"></td>
+        <td class="f" name = "mailaddress"><input type="text"></td>
+        <td class="g" name = "password"><input type="text"></td>
       </tr>
     </table>
   </div>
-
+</from>
 
   <!--ボタン配置--> 
   <div class="button" >
@@ -75,7 +77,8 @@
       }
     }
   </script>
-  <form action = "seitotouroku.php" method = "POST">
+  
+    
  
 </body>
 </html>

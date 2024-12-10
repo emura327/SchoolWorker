@@ -27,17 +27,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="student_list.css" text="text/css">
+    <link rel="stylesheet" href="../cssfile/student_list.css" text="text/css">
     <title>生徒一覧</title>
 </head>
 <body>
 <?php include('header_site.php');?>
             <form action="tanntouzyugyou.php" method="post" class="search_menu">
                 <select name="terms" class="pulldown_menu" >
-                    <option value="name" >名前</option>
-                    <option value="furigana">フリガナ</option>
-                    <option value="student_number">学籍番号</option>
-                    <option value="miss_number">欠課数</option>
+                    <option value="name".selected>名前</option>
+                    '<option value="furigana".selected>フリガナ</option>;
+                    <option value="student_number".selected>学籍番号</option>
+                    <option value="miss_number".selected>欠課数</option>
                 </select>
                 <input type="text" name="input1" class="searchbox" value="<?php echo $_POST['input1']?>"><br>
                 <input type="submit" name="submit" value="検索" class="search">

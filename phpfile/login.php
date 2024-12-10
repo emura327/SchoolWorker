@@ -46,17 +46,28 @@
         }
         //正しいとき
         else {
-            session_regenerate_id(TRUE);
-            $stmt = $dbh -> prepare("SELECT * from STUDENT WHERE mailaddress = ? ");
-            $stmt -> bindParam(1, $_POST['mail'], PDO::PARAM_STR);
-            $stmt -> execute();
-            //全体で使う変数を格納する配列
-            $ary = $stmt -> fetch(PDO::FETCH_ASSOC);
-            $_SESSION["class"] = $ary["class"];
-            $_SESSION["student_number"] = $ary["student_number"];
-            $_SESSION["name"] = $ary["name"];
-            header("Location: mypage.php");
-            exit();
+            //役職が生徒の時
+            if ($result['pos'] == 0) {
+                session_regenerate_id(TRUE);
+                $stmt = $dbh -> prepare("SELECT * from STUDENT WHERE mailaddress = ? ");
+                $stmt -> bindParam(1, $_POST['mail'], PDO::PARAM_STR);
+                $stmt -> execute();
+                //全体で使う変数を格納する配列
+                $ary = $stmt -> fetch(PDO::FETCH_ASSOC);
+                $_SESSION["class"] = $ary["class"];
+                $_SESSION["student_number"] = $ary["student_number"];
+                $_SESSION["name"] = $ary["name"];
+                header("Location: mypage.php");
+                exit();
+            //役職が先生の時
+            }else {
+                session_regenerate_id(TRUE);
+                $stmt = $dbh -> prepare("SELECT * from STUDENT WHERE mailaddress = ? ");
+                $stmt -> bindParam(1, $_POST['mail'], PDO::PARAM_STR);
+                $stmt -> execute();
+                header("Location: mypage_teacher.php");
+                
+            }
         }
     }
         

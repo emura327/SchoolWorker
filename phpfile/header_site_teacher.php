@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta http-equiv="content-type" charset="utf-8">
-    <link rel="stylesheet" href="header_site_teacher.css">
+    <link rel="stylesheet" href="../cssfile/header_site_teacher.css">
         <!-- BootstrapのCSS読み込み
         <link href="css/bootstrap.min.css" rel="stylesheet" /> -->
     

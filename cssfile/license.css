@@ -1,15 +1,14 @@
-ul li {
-    list-style: none;
-    margin-top: 220px;
-}
+
 label{
     margin-right: 50px;
     width: 100px;
     float: left;
 }
-ul{
+.name,.acquisition{
+    list-style: none;
+    margin-top: 220px;
     width: 450px;
-    height: 400px;
+    height: 250px;
     margin: 0 auto;
 }
 .example{

@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="../cssfile/license.css" text="text/css">
     <title>Document</title>
 </head>
-<body>
-    <?php include('navbar.php');?>
+
+    <?php include('header_site.php');?>
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
         rel="stylesheet"
@@ -19,6 +19,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+<body>
 <form action="/form.php" method="post">
     <ul>
         <li class="name">

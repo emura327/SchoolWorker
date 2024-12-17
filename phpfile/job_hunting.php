@@ -36,7 +36,7 @@
                     <label for="message">内容</label>
                     <textarea id="message" name="message" size="100" ></textarea>
                 </li>
-                <input type="submit" value="送信する">
+                <input type="submit" value="送信する"class="example">
             </ul>
             
         </form>

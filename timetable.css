@@ -108,14 +108,18 @@ th{
     color: #FFF;
     font-size: 150%;
 }
-table{
+.tb{
     width: 76%;
     height: 76%;
     position: absolute;
     top: 222px;
     left: 250px;
     bottom: 200px;
+    border-collapse:unset;
 }
 .kado{
     background-color: #000;
+}
+tbody{
+    border-width: thin;
 }

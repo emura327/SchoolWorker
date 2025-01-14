@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="license.css" text="text/css">
+    <link rel="stylesheet" href="../cssfile/license.css" text="text/css">
     <title>Document</title>
 </head>
 <body>
-    <?php include('navbar.php');?>
+    <?php include('header_site.php');?>
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
         rel="stylesheet"
@@ -30,7 +30,7 @@
         <li class="acquisition">
             <div>
                 <label for="message">取得日</label>
-                <input type="text" id="message" name="message" size="60" ></textarea>
+                <label class="date-edit"><input type="date" value="2025-01-01" /></label>
             </div>
         </li>
     </ul>

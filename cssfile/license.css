@@ -1,7 +1,7 @@
 
 label{
     margin-right: 50px;
-    width: 100px;
+    width: fit-content;
     float: left;
 }
 .name,.acquisition{
@@ -21,4 +21,8 @@ label{
     position: absolute;
     left: 730px;
     border-radius:10px;
+}
+
+.name label, .acquisition label{
+    font-size: 46px;
 }

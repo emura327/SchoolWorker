@@ -19,10 +19,16 @@ select{
     }
 }
 .example{
-    width: 600px;
+    width: 100%;
     padding: 10px;
     box-sizing: border-box;
     border: 1px solid #68779a;
     background: #cbe8fa;
     border-radius: 15px;
+    margin-top: 100px;
+}
+textarea{
+    resize: none;
+    width: calc(100% - 120px);
+    height: 200px;
 }

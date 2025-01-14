@@ -50,7 +50,7 @@
     <link rel="stylesheet" href="../cssfile/mypage_teacher.css" text="text/css">
     <title>Document</title>
 </head>
-<?php include('header_site.php');?>
+<?php include('header_site_teacher.php');?>
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
         rel="stylesheet"

@@ -29,20 +29,16 @@
         <nav class="navbar fixed-top"></nav>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">保有資格</a>
+                    <a class="nav-link active" aria-current="page" href="license.php">保有資格</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">就活</a>
+                    <a class="nav-link active" aria-current="page" href="job_hunting.php">就活</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="timeTable.html">時間割</a>
+                    <a class="nav-link active" aria-current="page" href="timetable.php">時間割</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="situmonnsousinn.html">質問</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">ヘルプ</a>
-                </li>
+                    <a class="nav-link active" aria-current="page" href="situmonnsousinn.php">質問</a>
                 </li>
             </ul> 
     </div>

@@ -13,7 +13,7 @@
             <ul class = job>
                 <li class="company">
                     <label for="name">企業名</label>
-                    <input type="text" id="name" name="name" size="80">
+                    <input type="text" id="name" name="name" class="co">
                 </li>
                 <li class="situation">
                     <label for="就活状況">就活状況</label>

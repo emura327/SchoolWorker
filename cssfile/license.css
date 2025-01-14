@@ -1,14 +1,16 @@
-
+.uull li {
+    list-style: none;
+    margin-top: 180px;
+}
 label{
     margin-right: 50px;
-    width: fit-content;
+    width: 100px;
     float: left;
+   
 }
-.name,.acquisition{
-    list-style: none;
-    margin-top: 220px;
+.uull{
     width: 450px;
-    height: 250px;
+    height: 400px;
     margin: 0 auto;
 }
 .example{
@@ -21,8 +23,22 @@ label{
     position: absolute;
     left: 730px;
     border-radius:10px;
+    margin-top: 65px;
 }
-
-.name label, .acquisition label{
-    font-size: 46px;
+.date-edit{
+    margin-top: 54px;
+    position: absolute;
+    right: 1000px;
+    font-size: 35px;
+}
+.name{
+    width: 150px;
+    font-size: 33px;
+}
+.message{
+    font-size: 33px;
+    margin-left: 5px;
+}
+.date{
+    width: 370px
 }

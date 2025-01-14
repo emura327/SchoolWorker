@@ -11,7 +11,9 @@
 <?php include('header_site.php');?>
 </body>
 <body>
-<form action = "student_registration.php" method = "POST">
+  <a2 class="touroku2">登録用</a2>
+<form action = "student_registration.php" method = "POST" id="submit">
+
   <div class="parent">
     <!--table作成とヘッダーだけ先に-->
     <table id="tbl" border="1" style="border-collapse:collapse;">
@@ -41,7 +43,8 @@
   <div class="button" >
       <button class="add" type="button" onclick="add()">行追加</button>
       <button class="del" type="button" onclick="del()">行削除</button>
-      <button class="touroku" type="submit">登録</button>
+      <button class="touroku" type="submit" form="submit">登録</button>
+
   </div>
 
   <script>
@@ -77,8 +80,9 @@
       }
     }
   </script>
-  
-  <form action = "student_update.php" method = "POST">
+  <a2 class="update2">更新用</a2>
+  <form action = "student_update.php" method = "POST" id="update">
+
   <div class="parent">
     <!--table作成とヘッダーだけ先に-->
     <table id="tb2" border="1" style="border-collapse:collapse;">
@@ -108,7 +112,8 @@
   <div class="button" >
       <button class="add" type="button" onclick="add2()">行追加</button>
       <button class="del" type="button" onclick="del2()">行削除</button>
-      <button class="update" type="submit">更新</button>
+      <button class="update" type="submit" form="update">更新</button>
+
   </div>
 
   <script>

@@ -6,22 +6,21 @@
     <link rel="stylesheet" href="../cssfile/license.css" text="text/css">
     <title>Document</title>
 </head>
-
-    <?php include('header_site.php');?>
-    
 <body>
+  
+  <?php include('header_site.php');?>
 <form action="/form.php" method="post">
-    <ul>
+    <ul class="uull">
         <li class="name">
             <div>
                 <label for="name">資格名</label>
-                <input type="text" id="name" name="name" size="60">
+                <input type="text">
             </div>
         </li>
         <li class="acquisition">
             <div>
-                <label for="message">取得日</label>
-                <input type="text" id="message" name="message" size="60" ></textarea>
+                <label class="message">取得日</label>
+                <label class="date-edit"><input class="date" value="2025-01-01"　type="date"></label>
             </div>
         </li>
     </ul>

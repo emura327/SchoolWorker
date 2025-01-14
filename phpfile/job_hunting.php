@@ -7,26 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    <?php include('navbar.php');?>
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-        crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+    <?php include('header_site.php');?>
     <div>
         <form action="/form.php" method="post"></form>
-            <ul>
+            <ul class = job>
                 <li class="company">
                     <label for="name">企業名</label>
                     <input type="text" id="name" name="name" size="80">
                 </li>
-                <li>
+                <li class="situation">
                     <label for="就活状況">就活状況</label>
                     <select name="就活状況">
                         <option value="">選択してください</option>
@@ -47,8 +36,9 @@
                     <label for="message">内容</label>
                     <textarea id="message" name="message" size="100" ></textarea>
                 </li>
-                <input type="submit" value="送信する">
+                <input type="submit" value="送信する"class="example">
             </ul>
+            
         </form>
     </div>
 </body>

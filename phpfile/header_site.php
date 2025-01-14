@@ -35,7 +35,7 @@
                     <a class="nav-link active" aria-current="page" href="job_hunting.php">就活</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="timeTable.php">時間割</a>
+                    <a class="nav-link active" aria-current="page" href="timetable.php">時間割</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="situmonnsousinn.php">質問</a>

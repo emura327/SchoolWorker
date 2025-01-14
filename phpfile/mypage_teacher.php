@@ -59,8 +59,8 @@
     <link rel="stylesheet" href="../cssfile/mypage_teacher.css" text="text/css">
     <title>先生用マイページ</title>
 </head>
+<?php include('header_site_teacher.php');?>
 <body>
-    <?php include('header_site.php');?>
     <div class="section1">    
         <div class="teacher_info">
             <h3 class="g1">社員番号 名前</h3>

@@ -44,11 +44,7 @@
                     <a class="nav-link active" aria-current="page" href="#">生徒登録</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">質問</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">ヘルプ</a>
-                </li>
+                    <a class="nav-link active" aria-current="page" href="sendreply.php">質問</a>
                 </li>
             </ul> 
     </div>

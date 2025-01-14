@@ -40,10 +40,6 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="situmonnsousinn.php">質問</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">ヘルプ</a>
-                </li>
-                </li>
             </ul> 
     </div>
 </nav>

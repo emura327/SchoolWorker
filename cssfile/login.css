@@ -1,0 +1,55 @@
+h1 {
+    display: grid;
+    align-content: center;
+    color: #EE3131;
+    text-align: center;
+    font-size: 200px;
+    height: 250px;
+    margin: 50px 0 20px 0;
+}
+
+h2 {
+    color: #000;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+div {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/loginpage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.form_login,.login_pass{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 633px;
+}
+
+input{
+    width: 100%;
+    height: 38px;
+    margin-top: 10px;
+}
+
+#login {
+    width: 50%;
+    margin-top: 30px;
+    height: 50px;
+}
+

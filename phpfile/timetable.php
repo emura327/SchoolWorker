@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../cssfile/timetable.css" text="text/css">
     <title>生徒時間割</title>
 </head>
 <body>
@@ -50,9 +49,9 @@
             }
         ?>
         <h3>ソフトウェア開発学科</h3>
-    <table class="tb" border="3">
+    <table class="tb" border="3" border-width="1">
         <tr>
-            <th class="kado">/</th>
+            <th class="kado"></th>
             <th>月</th>
             <th>火</th>
             <th>水</th>
@@ -104,6 +103,7 @@
         </tr>
     </table>
         
+    <link rel="stylesheet" href="../cssfile/timetable.css" text="text/css">
         
 </body>
 </html>

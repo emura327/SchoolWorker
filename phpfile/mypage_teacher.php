@@ -33,23 +33,23 @@
         exit('データベースエラー3');
     }
     //$ntitleにNOTICEテーブルの結果を代入
-    try{
-        $stmt = $dbh -> prepare('SELECT * FROM NOTICE WHERE class=? or class = "全体"');
-        $stmt -> bindParam(1, $_SESSION["class"], PDO::PARAM_STR);
-        $stmt -> execute();
-        $ntitle = $stmt -> fetchAll(PDO::FETCH_ASSOC);
-    } catch (PDOException $e) {
-        exit('データベースエラー4');
-    }
+    // try{
+    //     $stmt = $dbh -> prepare('SELECT * FROM NOTICE WHERE class=? or class = "全体"');
+    //     $stmt -> bindParam(1, $_SESSION["class"], PDO::PARAM_STR);
+    //     $stmt -> execute();
+    //     $ntitle = $stmt -> fetchAll(PDO::FETCH_ASSOC);
+    // } catch (PDOException $e) {
+    //     exit('データベースエラー4');
+    // }
     //$nquestionにquestionテーブルの結果を代入
-    try{
-        $stmt = $dbh -> prepare('SELECT * FROM QUESTION WHERE teacher_number=? ');
-        $stmt -> bindParam(1, $_SESSION["teacher_number"], PDO::PARAM_STR);
-        $stmt -> execute();
-        $ntitle = $stmt -> fetchAll(PDO::FETCH_ASSOC);
-    } catch (PDOException $e) {
-        exit('データベースエラー5');
-    }
+    // try{
+    //     $stmt = $dbh -> prepare('SELECT * FROM QUESTION WHERE teacher_number=? ');
+    //     $stmt -> bindParam(1, $_SESSION["teacher_number"], PDO::PARAM_STR);
+    //     $stmt -> execute();
+    //     $ntitle = $stmt -> fetchAll(PDO::FETCH_ASSOC);
+    // } catch (PDOException $e) {
+    //     exit('データベースエラー5');
+    // }
 ?>
 <!DOCTYPE html>
 <html lang="ja">

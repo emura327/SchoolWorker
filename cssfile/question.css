@@ -1,0 +1,24 @@
+.session1{
+    font-size: 30px;
+}
+.question{
+    margin: 50px auto 0;
+    width: fit-content;
+    list-style: none;
+}
+.question li{
+    margin-bottom: 40px;
+}
+li:nth-child(0n+3){
+    display: flex;
+    flex-direction: column;
+}
+.example{
+    width: 600px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #68779a;
+    background: #cbe8fa;
+    cursor: pointer;
+    border-radius: 15px;
+}

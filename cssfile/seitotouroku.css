@@ -157,7 +157,6 @@ gap: 10px;
 flex-shrink: 0;
 }
 table{
-    background-color: #FFF;
     margin: 135px 242px 0;
     width: 1400px;
 }
@@ -175,24 +174,4 @@ align-items: center;
 gap: 8px;
 background-color:#0dcaf0;
 color: #FFF;
-
-}
-.touroku2{
-    font-size: 50px;
-    color: black;
-    position: absolute;
-    left: 244px;
-    top: 211px;
-}
-
-.update2{
-    font-size: 50px;
-    color: black;
-    margin: 0px 242px;
-    position: relative;
-    top: 105px;
-}
-body{
-    background-size: cover;
-    background-image: url(../img/white_00036.jpg);
 }

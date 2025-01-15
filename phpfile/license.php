@@ -7,8 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <?php include('header_site.php');?>
-
+  
+  <?php include('header_site.php');?>
 <form action="/form.php" method="post">
     <ul class="uull">
         <li class="name">
@@ -20,7 +20,7 @@
         <li class="acquisition">
             <div>
                 <label class="message">取得日</label>
-                <label class="date-edit"><input type="date" value="2025-01-01"/></label>
+                <label class="date-edit"><input class="date" value="2025-01-01" type="date"></label>
             </div>
         </li>
     </ul>

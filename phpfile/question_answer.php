@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <title>テスト</title>
-<meta charset="UTF-8">
-</head>
-<body>
 <?php
+
+    session_start();
+
+    $PQNumber = $_POST['question_number'];
+    $PAnswer = $_POST['answer'];
 
     try{
         $dsn='mysql:host=database-2.c3cwkcssqi74.ap-northeast-3.rds.amazonaws.com;dbname=SCHOOL_WORKER;charset=utf8';
@@ -14,29 +12,18 @@
         $dbh = new PDO($dsn, $username, $password);
         $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    	$sql = 'SELECT student_number,name FROM STUDENT';
+        $sql = 'UPDATE QUESTION SET answer = :PAnswer, adatetime = now() WHERE question_number = :PQNumber;';
+
         $stmt=$dbh->prepare($sql);
+        $stmt->bindParam(':PQNumber', $PQNumber, PDO::PARAM_STR);
+        $stmt->bindParam(':PAnswer', $PAnswer, PDO::PARAM_STR);
         $stmt->execute();
 
-        $dbh=null;
+        $dbh = null;
 
-        while(true){
-        $rec=$stmt->fetch(PDO::FETCH_ASSOC);
-        if($rec==false){
-            break;
-        }
-        print $rec['class'];
-        print $rec['name'];
-    }
-
+        header('Location:question.php');
     }catch (PDOException $e){
         print('Error:'.$e->getMessage());
         die();
     }
-
 ?>
-
-</body>
-</html>
-
-

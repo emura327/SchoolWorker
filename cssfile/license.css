@@ -1,6 +1,6 @@
 .uull li {
     list-style: none;
-    margin-top: 180px;
+    margin-top: 118px;
 }
 label{
     margin-right: 50px;
@@ -21,15 +21,16 @@ label{
     background: #cbe8fa;
     cursor: pointer;
     position: absolute;
-    left: 730px;
+    left: 714px;
     border-radius:10px;
     margin-top: 65px;
 }
 .date-edit{
+    width: fit-content;
     margin-top: 54px;
-    position: absolute;
-    right: 1000px;
     font-size: 35px;
+    margin-right: 185px;
+    margin-left: 2px
 }
 .name{
     width: 150px;
@@ -38,7 +39,8 @@ label{
 .message{
     font-size: 33px;
     margin-left: 5px;
+    margin-bottom: -50px;
 }
-.date{
-    width: 370px
+.date-edit input{
+    width: 142%;
 }

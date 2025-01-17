@@ -27,7 +27,7 @@
         $stmt->execute();
 
         $dbh = null;
-        header('Location:mypage.php');
+        header('Location:reportJob.php');
     }catch (PDOException $e){
         print('Error:'.$e->getMessage());
         die();

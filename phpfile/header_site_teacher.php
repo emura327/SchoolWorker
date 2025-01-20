@@ -35,7 +35,7 @@
         <nav class="navbar fixed-top"></nav>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">担任クラス</a>
+                    <a class="nav-link active" aria-current="page" href="student_list.php">担任クラス</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">担当授業</a>

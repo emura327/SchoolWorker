@@ -1,0 +1,75 @@
+.result {
+    overflow-y:scroll;
+    font-size: 30px;
+    margin: 0 auto 0;
+    top: 110px;
+    left: 100px;
+    width: 1665px;
+    height: 560px;
+    border: 4px solid #000;
+}
+
+input.searchbox{
+    padding: 0%;
+    width: 400px;
+    height: 100%;
+    font-size: 40px;
+}
+
+input.search{
+    padding: 0%;
+    width: 400px;
+    height: 100%;
+    font-size: 40px;
+   
+}
+
+table {
+    width: 100%;
+}
+
+form{
+    height: 100px;
+    justify-content: end;
+    display: flex;
+    width: 1665px;
+    margin: 30px auto 30px;
+}
+
+.search_menu{
+    height: 100px;
+    justify-content: end;
+    display: flex;
+    width: 1665px;
+    margin: 30px auto 30px;
+}
+
+
+
+.pulldown_menu{
+    font-size: 55px;
+}
+
+.title{
+    width: 422px;
+}
+
+.date{
+    width: 479px;
+}
+
+.student_number{
+    width:422px; 
+}
+
+.name{
+    width: 319px;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+a:hover{
+    color: #000;
+    text-decoration: underline;
+}

@@ -19,8 +19,8 @@
 
         $stmt=$dbh->prepare($sql);
         $stmt->bindParam(':SNumber', $SNumber, PDO::PARAM_STR);
-        $stmt->bindParam(':PTitle', $PLName, PDO::PARAM_STR);
-        $stmt->bindParam(':PQuestion', $PGDay, PDO::PARAM_STR);
+        $stmt->bindParam(':PTitle', $PTitle, PDO::PARAM_STR);
+        $stmt->bindParam(':PQuestion', $PQuestion, PDO::PARAM_STR);
         $stmt->bindParam(':PTNumber', $PTNumber, PDO::PARAM_STR);
         $stmt->execute();
 

@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?php include('navbar.php');?>
+    <?php include('header_site.php');?>
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
         rel="stylesheet"
@@ -19,18 +19,18 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-<form action="/form.php" method="post">
+<form action="license_report.php" method="post">
     <ul>
         <li class="name">
             <div>
                 <label for="name">資格名</label>
-                <input type="text" id="name" name="name" size="60">
+                <input type="text" id="name" name="license_name" size="60">
             </div>
         </li>
         <li class="acquisition">
             <div>
                 <label for="message">取得日</label>
-                <input type="text" id="message" name="message" size="60" ></textarea>
+                <input type="text" id="message" name="getday" size="60" ></textarea>
             </div>
         </li>
     </ul>

@@ -24,7 +24,7 @@
 
         $dbh = null;
 
-        header('Location:license.php');
+        header('Location:mypage.php');
     }catch (PDOException $e){
         print('Error:'.$e->getMessage());
         die();

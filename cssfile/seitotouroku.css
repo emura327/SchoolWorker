@@ -1,12 +1,10 @@
-body{
-    margin: 0;
-}
 .tbl{
     position: absolute;
     left: 200px;
     border-collapse: collapse;
     top: 200px;
 }
+
 .number{
 font-size: 20px;
 width: 135px;
@@ -16,8 +14,8 @@ justify-content: center;
 align-items: center;
 gap: 10px;
 flex-shrink: 0;
-background-color: #1a69c6;
-color: #FFF;
+background-color:#0dcaf0;
+color: black;
 }
 .number2{
 font-size: 20px;
@@ -28,8 +26,8 @@ justify-content: center;
 align-items: center;
 gap: 10px;
 flex-shrink: 0;
-background-color: #1a69c6;
-color: #FFF;
+background-color:#0dcaf0;
+color: black;
 }
 
 .name{
@@ -41,8 +39,8 @@ justify-content: center;
 align-items: center;
 gap: 10px;
 flex-shrink: 0;
-background-color: #1a69c6;
-color: #FFF;
+background-color:#0dcaf0;
+color: black;
 }
 .hurigana{
 font-size: 20px;
@@ -53,8 +51,8 @@ justify-content: center;
 align-items: center;
 gap: 10px;
 flex-shrink: 0;
-background-color: #1a69c6;
-color: #FFF;
+background-color:#0dcaf0;
+color: black;
 }
 .dennwa{
 font-size: 20px;
@@ -65,8 +63,8 @@ justify-content: center;
 align-items: center;
 gap: 10px;
 flex-shrink: 0;
-background-color: #1a69c6;
-color: #FFF;
+background-color:#0dcaf0;
+color: black;
 }
 .mail{
 font-size: 20px;
@@ -77,8 +75,8 @@ justify-content: center;
 align-items: center;
 gap: 10px;
 flex-shrink: 0;
-background-color: #1a69c6;
-color: #FFF;
+background-color:#0dcaf0;
+color: black;
 }
 .pass{
 font-size: 20px;
@@ -89,8 +87,8 @@ justify-content: center;
 align-items: center;
 gap: 10px;
 flex-shrink: 0;
-background-color: #1a69c6;
-color: #FFF;
+background-color:#0dcaf0;
+color: black;
 }
 .a{
     width: 135px;
@@ -174,7 +172,6 @@ table{
 padding: 12.5px 16px;
 align-items: center;
 gap: 8px;
-background-color: #1a69c6;
+background-color:#0dcaf0;
 color: #FFF;
-
 }

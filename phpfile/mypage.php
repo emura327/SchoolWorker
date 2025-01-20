@@ -16,8 +16,8 @@
     }
     //$_SESSIONで該当する生徒を抽出した結果を$resultに代入
     try {
-        $stmt = $dbh -> prepare('SELECT * FROM STUDENT WHERE class=?');
-        $stmt -> bindParam(1, $_SESSION["class"], PDO::PARAM_STR);
+        $stmt = $dbh -> prepare('SELECT * FROM STUDENT WHERE student_number=?');
+        $stmt -> bindParam(1, $_SESSION["student_number"], PDO::PARAM_STR);
         $stmt -> execute();
         $result = $stmt -> fetch(PDO::FETCH_ASSOC);
     } catch (PDOException $e) {
@@ -26,7 +26,7 @@
 
     //$answerにLESSONテーブルの結果を代入
     try{
-        $stmt = $dbh -> prepare('SELECT * FROM LESSON WHERE student_number=?');
+        $stmt = $dbh -> prepare('SELECT * FROM MISS_LESSON WHERE student_number=?');
         $stmt -> bindParam(1, $_SESSION["student_number"], PDO::PARAM_STR);
         $stmt -> execute();
         $answer = $stmt -> fetch(PDO::FETCH_ASSOC);

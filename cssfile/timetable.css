@@ -104,18 +104,28 @@ th{
     align-items: center;
     gap: 10px;
     flex-shrink: 0;
-    background: #1A69C6;
-    color: #FFF;
+    background: #0dcaf0;
+    color: black;
     font-size: 150%;
+   
 }
-table{
+.tb{
     width: 76%;
-    height: 76%;
+    height: 70%;
     position: absolute;
     top: 222px;
     left: 250px;
     bottom: 200px;
+    border-collapse: collapse;
+    border-color: black;
+    border: 1px solid;
 }
 .kado{
-    background-color: #000;
+    background-color: #00bfff;
+}
+tbody, td, tfoot, th, thead, tr{
+    border-width: 1px;
+}
+tr th{
+    text-align: center;
 }

@@ -29,8 +29,8 @@
         </li>
         <li class="acquisition">
             <div>
-                <label for="message">取得日</label>
-                <input type="text" id="message" name="getday" size="60" ></textarea>
+                <label class="message">取得日</label>
+                <label class="date-edit"><input name="getday" value="2025-01-01" type="date"></label>
             </div>
         </li>
     </ul>

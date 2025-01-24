@@ -38,16 +38,16 @@
                     <a class="nav-link active" aria-current="page" href="student_list.php">担任クラス</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">担当授業</a>
+                    <a class="nav-link active" aria-current="page" href="lessons_teacher">担当授業</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="seitotouroku.php">生徒登録</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="sendreply.php">質問</a>
+                    <a class="nav-link active" aria-current="page" href="question_teacher.php">質問</a>
                 </li>
             </ul> 
     </div>
-   
+</nav>
 </body>
 </html>

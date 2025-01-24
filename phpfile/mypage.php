@@ -82,7 +82,8 @@
         <h3 class="g4">お知らせ</h3>
         <ul>
             <?php 
-                for ($i = 0; $i < 2; $i++){
+                $array_count=count($ntitle);
+                for ($i = 0; $i < $array_count; $i++){
                     echo '<li>' . $ntitle[$i]['title'] . '</li>' ;
                 }
             ?>

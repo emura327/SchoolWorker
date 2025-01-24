@@ -62,11 +62,16 @@
             //役職が先生の時
             }else {
                 session_regenerate_id(TRUE);
-                $stmt = $dbh -> prepare("SELECT * from STUDENT WHERE mailaddress = ? ");
+                $stmt = $dbh -> prepare("SELECT * FROM TEACHER WHERE id = ?");
                 $stmt -> bindParam(1, $_POST['mail'], PDO::PARAM_STR);
                 $stmt -> execute();
+                //全体で使う変数を格納する配列
+                $ary = $stmt -> fetch(PDO::FETCH_ASSOC);
+                $_SESSION["class"] = $ary["class"];
+                $_SESSION["teacher_number"] = $ary["teacher_number"];
+                $_SESSION["name"] = $ary["name"];
                 header("Location: mypage_teacher.php");
-                
+                exit();
             }
         }
     }

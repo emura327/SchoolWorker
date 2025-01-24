@@ -8,7 +8,7 @@
     <title>生徒登録</title>
 </head>
 <body>
-<?php include('header_site.php');?>
+<?php include('header_site_teacher.php');?>
 </body>
 <body>
   <a2 class="touroku2">登録用</a2>

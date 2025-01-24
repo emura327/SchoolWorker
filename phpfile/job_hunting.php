@@ -16,7 +16,7 @@
                     <input type="text" id="name" name="cname" class="co">
                 </li>
                 <li class="situation">
-                    <label for="phase">就活状況</label>
+                    <label for="phase" id="text">就活状況</label>
                     <select name="phase" id="phase">
                         <option value="">選択してください</option>
                         <option value="説明会">説明会</option>

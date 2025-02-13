@@ -7,24 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-  
-  <?php include('header_site.php');?>
-<form action="/form.php" method="post">
+    <?php include('header_site.php');?>
+
+<form action="license_report.php" method="post">
     <ul class="uull">
         <li class="name">
             <div>
                 <label for="name">資格名</label>
-                <input type="text">
+                <input type="text" name="license_name" class="lname">
             </div>
         </li>
         <li class="acquisition">
             <div>
                 <label class="message">取得日</label>
-                <label class="date-edit"><input class="date" value="2025-01-01" type="date"></label>
+                <label class="date-edit"><input type="date" name="getday" value="2025-01-01"/></label>
             </div>
         </li>
-    </ul>
             <input type="submit" value="送信する"class="example">
+    </ul>
 </form>
 </body>
 </html>

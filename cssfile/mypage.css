@@ -136,9 +136,7 @@ h3{
     display: inline-block;
     font-size: 50px;
 }
-.name{
-    margin-left: 48px;
-}
+
 .g2{
     text-align: center;;
     font-weight: 600;
@@ -151,7 +149,7 @@ h3{
 .g2 p{
     font-size: 128px;
     border-bottom: 3px solid #000;
-    background: #FFFCFC;
+    background: #FFF;
 }
 .g3{
     text-align: center;
@@ -182,5 +180,16 @@ h3{
     left: 1400px;
 }
 ul{
+    font-size: 50px;
+}
+
+.g5{
+    position: absolute;
+    left: 50px;
+    top: 850px;
+    font-size: 40px;
+}
+
+.n1{
     font-size: 50px;
 }

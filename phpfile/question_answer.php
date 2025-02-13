@@ -21,7 +21,7 @@
 
         $dbh = null;
 
-        header('Location:question.php');
+        header('Location:answer_result.php');
     }catch (PDOException $e){
         print('Error:'.$e->getMessage());
         die();

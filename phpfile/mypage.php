@@ -26,10 +26,10 @@
 
     //$answerにLESSONテーブルの結果を代入
     try{
-        $stmt = $dbh -> prepare('SELECT * FROM MISS_LESSON WHERE student_number=?');
+        $stmt = $dbh -> prepare('SELECT * FROM MISS_LESSON WHERE student_number=? and lesson_miss_number > 0 order by  lesson_miss_number desc');
         $stmt -> bindParam(1, $_SESSION["student_number"], PDO::PARAM_STR);
         $stmt -> execute();
-        $answer = $stmt -> fetch(PDO::FETCH_ASSOC);
+        $answer = $stmt -> fetchAll(PDO::FETCH_ASSOC);
     } catch (PDOException $e) {
         exit('データベースエラー3');
     }
@@ -66,27 +66,38 @@
     ></script>
 <body>
     <div class="student_info">
-        <h3 class="g1">学籍番号 名前</h3> 
+        <h3 class="g1">学籍番号 </h3> 
         <p class="student_number"><?php print $result['student_number'] ?> </p>
+        <h3 class="n1">名前</h3>
         <p class="name"><?php print $result['name'] ?></p>
     </div>
     <h3 class="g2">
         合計欠課数
-            <p><?php print $result['miss_number'] ?></p>
+            <p><?php
+                $sum = 0.0;
+                    foreach ($answer as $missnum) {
+                        $sum = $sum + $missnum['lesson_miss_number'];
+                    }
+                print $sum;
+            ?></p>
     </h3> 
     <h3 class="g3">
        多欠授業名
-            <p class="lesson_Name"><?php print $answer['lesson_name']?></p>
+            <p class="lesson_Name"><?php print $answer[0]['lesson_name']?></p>
     </h3>
     <div class ="notice_title">
         <h3 class="g4">お知らせ</h3>
         <ul>
             <?php 
-                for ($i = 0; $i < 2; $i++){
+                $array_count=count($ntitle);
+                for ($i = 0; $i < $array_count; $i++){
                     echo '<li>' . $ntitle[$i]['title'] . '</li>' ;
                 }
             ?>
         </ul>
+    </div>
+    <div class="g5">
+        <input type="button" class="logout" onclick="location.href='login.php'" value="ログアウト">
     </div>
 </body>
 </html>

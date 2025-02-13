@@ -1,5 +1,7 @@
 <?php
     try {
+        session_cache_limiter('none');
+        session_start();
 
         $dsn='mysql:host=database-2.c3cwkcssqi74.ap-northeast-3.rds.amazonaws.com;dbname=SCHOOL_WORKER;charset=utf8';
         $username='admin';
@@ -8,25 +10,26 @@
         $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $input1 = $_POST['input1'] . "%";
         $terms = $_POST['terms'];
+        $class = $_SESSION['class'];
 
 
         // 検索の処理制作
         if($_POST["input1"] != "" ){ 
             switch ($terms) {
                 case 'name':
-                    $sql = "SELECT student_number, name, kana, miss_number  from STUDENT where name LIKE '" . $input1 . "'";
+                    $sql = "SELECT student_number, name, kana, miss_number  from STUDENT where class = :class AND name LIKE '" . $input1 . "'";
                     break;
                 
                 case 'kana':
-                    $sql = "SELECT student_number, name, kana, miss_number  from STUDENT where kana LIKE '" . $input1 . "'";
+                    $sql = "SELECT student_number, name, kana, miss_number  from STUDENT where class = :class AND kana LIKE '" . $input1 . "'";
                     break;
 
                 case 'student_number':
-                    $sql = "SELECT student_number, name, kana, miss_number  from STUDENT where student_number LIKE '" . $input1 . "'";
+                    $sql = "SELECT student_number, name, kana, miss_number  from STUDENT where class = :class AND student_number LIKE '" . $input1 . "'";
                     break;
 
                 case 'miss_number':
-                    $sql = "SELECT student_number, name, kana, miss_number  from STUDENT where miss_number LIKE '" . $input1 . "'";
+                    $sql = "SELECT student_number, name, kana, miss_number  from STUDENT where class = :class AND miss_number LIKE '" . $input1 . "'";
                     break;
 
                 default:
@@ -34,12 +37,18 @@
                     break;
             }
             // $sql = "SELECT student_number, name, kana, miss_number  from STUDENT where '" . $terms . "' LIKE '" . $input1 . "'";
-            $stmt = $dbh->query($sql);
+            $stmt = $dbh->prepare($sql);
+            $stmt->bindParam(':class', $class, PDO::PARAM_STR);
+            $stmt->execute();
             $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            $dbh=null;
         }else {
-            $sql = "SELECT student_number, name, kana, miss_number FROM STUDENT";
-            $stmt = $dbh->query($sql);
+            $sql = 'SELECT student_number, name, kana, miss_number FROM STUDENT WHERE class = :class';
+            $stmt = $dbh->prepare($sql);
+            $stmt->bindParam(':class', $class, PDO::PARAM_STR);
+            $stmt->execute();
             $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            $dbh=null;
         }
 
     }catch (Exception $e) {
@@ -55,7 +64,7 @@
     <title>担当授業</title>
 </head>
 <body>
-<?php include('header_site.php');?>
+<?php include('header_site_teacher.php');?>
             <form action="student_list.php" method="post" class="search_menu">
                 <select name="terms" class="pulldown_menu" >
                     <option value="name" <?php if ($_POST['terms'] == 'name') echo 'selected'; ?>>名前</option>
@@ -73,8 +82,22 @@
                 <th class="name">名前</th><th class="furigana">フリガナ</th><th class="student_number">学籍番号</th><th class="miss_number">欠課数</th>
             </tr>
             <?php
-                foreach ($result as $allresult) {
-                    echo '<tr><td>' . $allresult['name'] . '</td><td>' . $allresult['kana'] . '</td><td>' . $allresult['student_number'] . '</td><td>' . $allresult['miss_number'] . '</td></tr>';
+                $int = 0;
+                $len = count($result);
+                if($len > 1){
+                    foreach ($result as $allresult) {
+                        echo '<form action="student_details.php" name=details method="post" class="details">';
+                        echo '<tr><td><a href="javascript:details['. $int .'].submit()">' . $allresult['name'] . '</td><td>' . $allresult['kana'] . '</td><td>' . $allresult['student_number'] . '</td><td>' . $allresult['miss_number'] . '</td></tr>';
+                        echo '<input type="hidden" id="detail" name="detail" value="' . $allresult['student_number'] . '">';
+                        echo '</form>';
+                        $int = $int + 1;
+                    }
+                }else{
+                    echo '<form action="student_details.php" name=details method="post" class="details">';
+                    echo '<tr><td><a href="javascript:details.submit()">' . $result[0]['name'] . '</td><td>' . $result[0]['kana'] . '</td><td>' . $result[0]['student_number'] . '</td><td>' . $result[0]['miss_number'] . '</td></tr>';
+                    echo '<input type="hidden" id="detail" name="detail" value="' . $result[0]['student_number'] . '">';
+                    echo '</form>';
+                    $int = $int + 1; 
                 }
             ?>   
 

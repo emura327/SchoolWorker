@@ -1,0 +1,183 @@
+.simei{
+  margin-top: 20px;
+  margin-left: 60px;
+  text-align: center;
+}
+
+.sikaku{
+  text-align: center;
+}
+
+.kekka{
+  text-align: center;
+}
+
+table th {
+  border: solid 1px black;
+  color: #FFF;
+  background: #1A69C6;
+  font-family: "Noto Sans JP";
+  font-size: 48px;
+}
+
+table td {
+  border: solid 1px black;
+  background: #D9D9D9;
+  font-family: "Noto Sans JP";
+  font-size: 48px;
+}
+
+/* 生徒の電話番号などの情報 */
+.student_number{
+  width: 240px;
+}
+.class_number{
+  width: 250px;
+}
+.name{
+  width: 320px;
+}
+.telnumber{
+  width: 430px;
+}
+.mailaddress{
+  width: 550px;
+}
+
+/* 生徒の個人情報の下 */
+/* table一つ目 */
+.company_name,.company_name_td{
+  width: 280px;
+}
+.phase,.phase_td{
+  width: 245px;
+}
+.phase_day,.phase_day_td{
+  width: 300px;
+}
+
+/*table2つ目*/
+/* .student_license */
+.student_license{
+  height: fit-content;
+  width: fit-content;
+  margin-top: 20px;
+}
+
+.student_license thead,.student_license tbody {
+  display: block;
+}
+
+.student_license tbody{
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 200px;
+}
+
+.getday,.getday_td{
+  width: 315px;
+}
+.license_name,.license_name_td{
+  width: 510px;
+}
+
+/* ul */
+.sort {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+}
+
+.sort li{
+  height: fit-content;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+
+/* tableのcss */
+.student_status{
+  width: fit-content;
+  height: fit-content;
+}
+
+/* .student_status */
+.student_status th {
+  border: solid 1px black;
+  color: #FFF;
+  background: #1A69C6;
+  font-family: "Noto Sans JP";
+  font-size: 30px;
+}
+
+.student_status td {
+  border: solid 1px black;
+  background: #D9D9D9;
+  font-family: "Noto Sans JP";
+  font-size: 30px;
+}
+
+.student_status thead,.student_status tbody {
+  display: block;
+}
+
+.student_status tbody{
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 230px;
+}
+
+
+
+
+/* .miss */
+.miss{
+  width: fit-content;
+  height: fit-content;
+}
+
+.miss th{
+  border: solid 1px black;
+  color: #FFF;
+  background: #1A69C6;
+}
+
+.miss td {
+  border: solid 1px black;
+  background: #D9D9D9;
+  font-family: "Noto Sans JP";
+}
+
+.miss thead,.miss tbody{
+  display: block;
+}
+
+.miss tbody{
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 500px;
+}
+
+.lesson_name,.lesson_name_td{
+  width: 390px;
+}
+.lesson_miss_number,.lesson_miss_number_td{
+  width: 325px;
+}
+
+
+/* すべてのテーブル共通 */
+table {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+td,th{
+  border: 1px solid #D9D9D9;
+  white-space: nowrap;
+}
+
+td{
+  margin: 0;
+}
+

@@ -16,40 +16,40 @@
     }
     //$_SESSIONで該当する先生を抽出した結果を$resultに代入
     try {
-        $stmt = $dbh -> prepare('SELECT * FROM TEACHER WHERE class=?');
-        $stmt -> bindParam(1, $_SESSION["class"], PDO::PARAM_STR);
+        $stmt = $dbh -> prepare('SELECT * FROM TEACHER WHERE teacher_number=?');
+        $stmt -> bindParam(1, $_SESSION["teacher_number"], PDO::PARAM_STR);
         $stmt -> execute();
         $result = $stmt -> fetch(PDO::FETCH_ASSOC);
     } catch (PDOException $e) {
         exit('データベースエラー2');
     }
-    //
+    //$nmissに多欠生徒を代入
     try {
-        $stmt = $dbh -> prepare('SELECT * FROM STUDENT WHERE class=? >0 ORDER BY miss_number DESC;');
+        $stmt = $dbh -> prepare('SELECT * FROM STUDENT WHERE class=? AND miss_number > 0 ORDER BY miss_number DESC LIMIT 10');
         $stmt -> bindParam(1, $_SESSION["class"], PDO::PARAM_STR);
         $stmt -> execute();
-        $result = $stmt -> fetch(PDO::FETCH_ASSOC);
+        $nmiss = $stmt -> fetchAll(PDO::FETCH_ASSOC);
     } catch (PDOException $e) {
         exit('データベースエラー3');
     }
     //$ntitleにNOTICEテーブルの結果を代入
-    // try{
-    //     $stmt = $dbh -> prepare('SELECT * FROM NOTICE WHERE class=? or class = "全体"');
-    //     $stmt -> bindParam(1, $_SESSION["class"], PDO::PARAM_STR);
-    //     $stmt -> execute();
-    //     $ntitle = $stmt -> fetchAll(PDO::FETCH_ASSOC);
-    // } catch (PDOException $e) {
-    //     exit('データベースエラー4');
-    // }
+    try{
+        $stmt = $dbh -> prepare('SELECT * FROM NOTICE WHERE class=? or class = "全体" LIMIT 5');
+        $stmt -> bindParam(1, $_SESSION["class"], PDO::PARAM_STR);
+        $stmt -> execute();
+        $ntitle = $stmt -> fetchAll(PDO::FETCH_ASSOC);
+    } catch (PDOException $e) {
+        exit('データベースエラー4');
+    }
     //$nquestionにquestionテーブルの結果を代入
-    // try{
-    //     $stmt = $dbh -> prepare('SELECT * FROM QUESTION WHERE teacher_number=? ');
-    //     $stmt -> bindParam(1, $_SESSION["teacher_number"], PDO::PARAM_STR);
-    //     $stmt -> execute();
-    //     $ntitle = $stmt -> fetchAll(PDO::FETCH_ASSOC);
-    // } catch (PDOException $e) {
-    //     exit('データベースエラー5');
-    // }
+    try{
+        $stmt = $dbh -> prepare('SELECT * FROM QUESTION WHERE teacher_number=? LIMIT 5');
+        $stmt -> bindParam(1, $_SESSION["teacher_number"], PDO::PARAM_STR);
+        $stmt -> execute();
+        $nquestion = $stmt -> fetchAll(PDO::FETCH_ASSOC);
+    } catch (PDOException $e) {
+        exit('データベースエラー5');
+    }
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -63,16 +63,17 @@
 <body>
     <div class="section1">    
         <div class="teacher_info">
-            <h3 class="g1">社員番号 名前</h3>
+            <h3 class="g1">社員番号 </h3>
             <p class="teacher_number"><?php print $result['teacher_number']?></p>
-            <p class="name"><?php print $resilt['name']?></p>
+            <h3 class="n1">名前</h3>
+            <p class="name"><?php print $result['name']?></p>
         </div> 
         <div class="miss_student">
             <h5 class="g2">多欠生徒名</h5> 
             <ul class="miss">
                 <?php
-                    for ($i = 0; $i < 10; $i++){
-                        echo '<li>' . $nmiss[$i]['name'] . '</li>' ;
+                    foreach($nmiss as $nmissall) {
+                        echo '<li>' . $nmissall['name'] . ' ' . $nmissall['miss_number'] . '</li>' ;
                     }
                 ?>
             </ul>
@@ -85,8 +86,8 @@
                 <h5 class="g3">お知らせ</h5>
                     <ul class="notice">
                         <?php
-                            for ($i = 0; $i < 2; $i++){
-                                echo '<li>' . $ntitle[$i]['title'] . '</li>' ;
+                            foreach($ntitle as $ntitleall){
+                                echo '<li>' . $ntitleall['title'] . '</li>' ;
                             }
                         ?>
                     </ul>  
@@ -96,8 +97,8 @@
                 <h5 class="g4">生徒からの質問</h5>
                 <ul class="question">
                     <?php
-                        for ($i = 0; $i < 2; $i++){
-                            echo '<li>' . $nquestion[$i]['title'] . '</li>' ;
+                        foreach ($nquestion as $nquestionall){
+                            echo '<li>' . $nquestionall['title'] . '</li>' ;
                         }
                     ?>
                 </ul>
@@ -106,7 +107,7 @@
     </div>
 
     <div class="g5">
-        <h8>ログアウト</h8>
+        <input type="button" class="logout" onclick="location.href='login.php'" value="ログアウト">
     </div>
 </body>
 </html>

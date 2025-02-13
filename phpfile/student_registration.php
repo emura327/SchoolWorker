@@ -14,9 +14,6 @@
         $ANumber[$i] = substr($PCNumber[$i],0,4);
     }
 
-    var_dump($PSNumber);
-    var_dump($ANumber);
-    echo count($PCNumber);
 
         try{
             $dsn='mysql:host=database-2.c3cwkcssqi74.ap-northeast-3.rds.amazonaws.com;dbname=SCHOOL_WORKER;charset=utf8';
@@ -43,6 +40,8 @@
 
             }
             $dbh = null;
+
+            header('Location:mypage_teacher.php');
 
         }catch (PDOException $e){
             print('Error:'.$e->getMessage());

@@ -29,22 +29,22 @@
     
 <nav class="nav navbar-expand-md navbar-light bg-info .justify-content-md-between p-4 ">
     <h1>
-        <a class="homename1" aria-current="page" href="#">JOHO</a>
+        <a class="homename1" aria-current="page" href="mypage_teacher.php">JOHO</a>
     </h1>
     <div class="collapse navbar-collapse justify-content-end">
         <nav class="navbar fixed-top"></nav>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">担任クラス</a>
+                    <a class="nav-link active" aria-current="page" href="student_list.php">担任クラス</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">担当授業</a>
+                    <a class="nav-link active" aria-current="page" href="lessons_teacher.php">担当授業</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="seitotouroku.php">生徒登録</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="sendreply.php">質問</a>
+                    <a class="nav-link active" aria-current="page" href="question_teacher.php">質問</a>
                 </li>
             </ul> 
     </div>

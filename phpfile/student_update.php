@@ -20,7 +20,7 @@
         $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         for($i=0;$i<$count;$i++){
-    	    $sql = 'UPDATE STUDENT SET class_number = :PCNumber, name = :PName, kana = :PKana, mailaddress = :PMailaddress, telnumber = :PTNumber, WHERE student_number = :PSNumber;'
+    	    $sql = 'UPDATE STUDENT SET class_number = :PCNumber, name = :PName, kana = :PKana, telnumber = :PTNumber, class = (SELECT class_name FROM CLASS WHERE class_prefix = :ANumber) WHERE student_number = :PSNumber;';
             $stmt=$dbh->prepare($sql);
             $stmt->bindParam(':PSNumber', $PSNumber[$i], PDO::PARAM_INT);
             $stmt->bindParam(':PCNumber', $PCNumber[$i], PDO::PARAM_STR);
@@ -33,6 +33,8 @@
         }
 
         $dbh=null;
+
+        header('Location:update.php');
 
     }catch (PDOException $e){
         print('Error:'.$e->getMessage());

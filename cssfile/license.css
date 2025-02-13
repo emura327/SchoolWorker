@@ -1,9 +1,8 @@
 .uull li {
     list-style: none;
-    margin-top: 118px;
+    margin-top: 110px;
 }
 label{
-    margin-right: 50px;
     width: 100px;
     float: left;
    
@@ -14,33 +13,35 @@ label{
     margin: 0 auto;
 }
 .example{
-    width: 500px;
+    width: 100%;
     padding: 10px;
     box-sizing: border-box;
     border: 1px solid #68779a;
     background: #cbe8fa;
     cursor: pointer;
-    position: absolute;
-    left: 714px;
     border-radius:10px;
-    margin-top: 65px;
+    margin-top: calc(100% - 300px);
 }
 .date-edit{
-    width: fit-content;
-    margin-top: 54px;
-    font-size: 35px;
-    margin-right: 185px;
-    margin-left: 2px
+    width: 100%;
+    font-size: 30px;
 }
 .name{
-    width: 150px;
+    width: auto;
     font-size: 33px;
 }
 .message{
-    font-size: 33px;
-    margin-left: 5px;
-    margin-bottom: -50px;
+    font-size: 30px;
+    width: 100%;
 }
 .date-edit input{
-    width: 142%;
+    width: 100%;
+}
+
+.example{
+    font-size: 30px;
+}
+
+.lname{
+    width: 100%;
 }

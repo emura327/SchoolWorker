@@ -1,19 +1,18 @@
-.company,.situation,.remakes {
+.situation,.remakes {
     list-style: none;
-    margin-top: 100px;
+    margin-top: 40px;
 }
 label{
-    margin-right: 20px;
-    width: 100px;
+    margin-right: 40px;
+    width: 120px;
     float: left;
 }
-/* 12/17css修正する */
 .job{
-    width: 700px;
+    width: 800px;
     height: 250px;
     margin: 0 auto;
-    width: fit-content;
-    height: fit-content;
+    font-size: 30px;
+    padding: 0px;
 }
 select{
     option[value=""]{
@@ -31,9 +30,25 @@ select{
 }
 textarea{
     resize: none;
-    width: calc(100% - 120px);
+    width: calc(100% - 160px);
     height: 200px;
 }
 .co{
-    width: calc(100% - 120px);
+    width: 640px;
+    margin: 0px auto;
 }
+.situation{
+    display: flex;
+}
+
+.date {
+    margin-left: auto;
+    width: auto;
+}
+
+.company{
+    margin:150px auto 0px;
+    width: fit-content;
+    list-style: none;
+}
+
